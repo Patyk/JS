@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Currency exchange table</title>
+</head>
+<body onload="start()">
+<script type="text/javascript" src="2.5CurrencyTable.js" ></script>
+<script type="text/javascript" src="jQuery.js" ></script>
+<form name="CurrencyTable">
+    <table>
+        <tr>
+            <th>Currency Name</th>
+            <th>Exchange Rate</th>
+            <th>Foreign Amount</th>
+        </tr>
+        <tr>
+            <td align="left">British Pound</td>
+            <td align="right"><input type="text" id="gbpRate" value="0"  size="10"></td>
+            <td align="right"><input type="text" id="gbpAmount" size="10"></td>
+        </tr>
+        <tr>
+            <td align="left">Canadian Dollar</td>
+            <td align="right"><input type="text" name="cadRate" size="10" disabled></td>
+            <td align="right"><input type="text" name="cadAmount" size="10"></td>
+        </tr>
+        <tr>
+            <td align="left">Euro</td>
+            <td align="right"><input type="text" name="eurRate" size="10" disabled></td>
+            <td align="right"><input type="text" name="eurAmount" size="10"></td>
+        </tr>
+        <tr>
+            <td align="left">Japaneese Yen</td>
+            <td align="right"><input type="text" name="yapRate" size="10" disabled></td>
+            <td align="right"><input type="text" name="yapAmount" size="10"></td>
+        </tr>
+        <tr>
+            <td align="left">Mexican Peso</td>
+            <td align="right"><input type="text" name="mexRate" size="10" disabled></td>
+            <td align="right"><input type="text" name="mexAmount" size="10"></td>
+        </tr>
+        <tr>
+            <td align="left">American Dollar</td>
+            <td align="right"><input type="text" size="10" disabled></td>
+            <td align="right"><input type="text" id="usdAmount" size="10" onChange="start()"></td>
+        </tr>
+    </table>
+
+    <br>
+    <input type="button" onclick="calculateRates()" value="Calculate1">
+    <input type="reset" value="RESET">
+
+
+</form>
+
+
+</body>
+</html>
