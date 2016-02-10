@@ -9,12 +9,11 @@ function start(){
 }
 
 function calculateRates(){
-    var gbpAmt = parseFloat(usdAmt*gbpRate);
-    var cadAmt = parseFloat(usdAmt*gbpRate);
-    var eurAmt = parseFloat(usdAmt*gbpRate);
-    var yapAmt = parseFloat(usdAmt*gbpRate);
-    var mexAmt = parseFloat(usdAmt*gbpRate);
-
+    var gbpAmt = parseFloat(usdAmt*gbpRate).toFixed(2);
+    var cadAmt = parseFloat(usdAmt*cadRate).toFixed(2);
+    var eurAmt = parseFloat(usdAmt*eurRate).toFixed(2);
+    var yapAmt = parseFloat(usdAmt*yapRate).toFixed(2);
+    var mexAmt = parseFloat(usdAmt*mexRate).toFixed(2);
 
     document.forms["CurrencyTable"].elements["gbpRate"].value = gbpRate;
     document.forms["CurrencyTable"].elements["cadRate"].value = cadRate;
@@ -26,5 +25,4 @@ function calculateRates(){
     document.forms["CurrencyTable"].elements["yapAmount"].value = eurAmt;
     document.forms["CurrencyTable"].elements["eurAmount"].value = yapAmt;
     document.forms["CurrencyTable"].elements["mexAmount"].value = mexAmt;
-
 }
