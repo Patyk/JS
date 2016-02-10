@@ -16,15 +16,15 @@ function calculateRates(){
     var mexAmt = parseFloat(usdAmt*gbpRate);
 
 
-    document.forms["counterForm"].elements["gbpRate"].value = gbpRate;
-    document.forms["counterForm"].elements["cadRate"].value = cadRate;
-    document.forms["counterForm"].elements["eurRate"].value = eurRate;
-    document.forms["counterForm"].elements["yapRate"].value = yapRate;
-    document.forms["counterForm"].elements["mexRate"].value = mexRate;
-    document.forms["counterForm"].elements["gbpAmount"].value = gbpAmt;
-    document.forms["counterForm"].elements["cadAmount"].value = cadAmt;
-    document.forms["counterForm"].elements["yapAmount"].value = eurAmt;
-    document.forms["counterForm"].elements["eurAmount"].value = yapAmt;
-    document.forms["counterForm"].elements["mexAmount"].value = mexAmt;
+    document.forms["CurrencyTable"].elements["gbpRate"].value = gbpRate;
+    document.forms["CurrencyTable"].elements["cadRate"].value = cadRate;
+    document.forms["CurrencyTable"].elements["eurRate"].value = eurRate;
+    document.forms["CurrencyTable"].elements["yapRate"].value = yapRate;
+    document.forms["CurrencyTable"].elements["mexRate"].value = mexRate;
+    document.forms["CurrencyTable"].elements["gbpAmount"].value = gbpAmt;
+    document.forms["CurrencyTable"].elements["cadAmount"].value = cadAmt;
+    document.forms["CurrencyTable"].elements["yapAmount"].value = eurAmt;
+    document.forms["CurrencyTable"].elements["eurAmount"].value = yapAmt;
+    document.forms["CurrencyTable"].elements["mexAmount"].value = mexAmt;
 
 }
